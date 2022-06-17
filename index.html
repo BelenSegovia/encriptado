@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html lang="esp">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de Texto</title>
+       <!-- <link rel="stylesheet" href="reset.css">  --> 
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&family=Permanent+Marker&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header> 
+            <div class="caja">
+                <img src="imagenes/Vector.png" class="logo">
+                <h1 class="titulo">Encriptando Mensajes</h1>
+            </div>
+        </header>
+        <main>
+            <section class="principal">
+                <input type="text" id="input-text" placeholder="Ingrese su texto aquí"></input>
+                <div class="botones">
+                    <h4 class="info"> &excl; Sólo letras minúsculas y sin acentos</h4>
+                    <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                    <button type="button" id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </section>
+
+            <section type="text" class="input-text-area">
+                <img src="imagenes/Muñeco.png" id="muneco">
+                <h2 id="mensaje-inicio">Ningún mensaje fue encontrado</h2>
+                <textarea id="resultado" placeholder="Ingrese el texto que desee encriptar o desencriptar"></textarea>
+                <button  type="button" id="copiar" onclick="copy()">¡Copiar!</button>
+            </section>
+        </main>
+        <script src="encriptado,js.js"></script>
+        <footer class="present">
+            <p class=" copyright">&copy Challenge ORACLE-ONE creado por Erika Belén Segovia.</p>
+        </footer>
+    </body>
+</html>
